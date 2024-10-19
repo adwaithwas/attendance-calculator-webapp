@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Attendance Calculator</h1>
+    <label for="num">Enter Attended Classes (Numerator):</label><br>
+    <input type="number" id="num" placeholder="Attended classes"><br>
+
+    <label for="den">Enter Total Classes (Denominator):</label><br>
+    <input type="number" id="den" placeholder="Total classes"><br>
+
+    <button onclick="getAttendance()">Calculate Attendance</button>
+
+    <div class="result" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
