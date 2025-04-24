@@ -2,15 +2,27 @@ body {
     font-family: "Afacad Flux", sans-serif;
     margin: 40px;
     background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
 }
+
 h1 {
     color: #333;
+    transition: color 0.3s;
 }
+
+.dark-mode h1 {
+    color: #e0e0e0;
+}
+
 input {
     margin: 10px 0;
     padding: 8px;
     font-size: 16px;
+    width: 250px;
 }
+
 button {
     padding: 10px;
     background-color: #28a745;
@@ -19,11 +31,56 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
 button:hover {
     background-color: #218838;
 }
+
 .result {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+.icon-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.icon-toggle:hover {
+    transform: scale(1.2);
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode input,
+.dark-mode button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+footer p {
+    color: gray;
+    font-style: italic;
+    transition: color 0.3s;
+}
+
+footer p:hover {
+    color: #0077ff;
 }
