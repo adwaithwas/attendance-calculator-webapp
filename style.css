@@ -34,7 +34,7 @@ button:hover {
     transition: color 0.3s;
 }
 
-.dark-mode .result {
+.dark-theme .result {
     color: #e0e0e0;
 }
 
