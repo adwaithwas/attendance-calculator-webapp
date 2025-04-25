@@ -1,26 +1,17 @@
 body {
     font-family: "Afacad Flux", sans-serif;
     margin: 40px;
-    background-color: #f4f4f4;
-    color: #333;
     transition: background-color 0.3s, color 0.3s;
-    text-align: center;
 }
 
 h1 {
     color: #333;
-    transition: color 0.3s;
-}
-
-.dark-mode h1 {
-    color: #e0e0e0;
 }
 
 input {
     margin: 10px 0;
     padding: 8px;
     font-size: 16px;
-    width: 250px;
 }
 
 button {
@@ -40,47 +31,100 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+    transition: color 0.3s;
 }
 
-footer {
-    margin-top: 50px;
-    font-size: 14px;
-    color: #888;
-    text-align: center;
+.dark-mode .result {
+    color: #e0e0e0;
 }
 
-.icon-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.2s;
+/* Light Theme */
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333333;
 }
 
-.icon-toggle:hover {
-    transform: scale(1.2);
+.light-theme button {
+    background-color: #28a745;
 }
 
-.dark-mode {
+.light-theme button:hover {
+    background-color: #218838;
+}
+
+.light-theme h1 {
+    color: #333333;
+}
+
+/* Dark Theme */
+.dark-theme {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-.dark-mode input,
-.dark-mode button {
+.dark-theme button {
+    background-color: #28a745;
+}
+
+.dark-theme button:hover {
+    background-color: #218838;
+}
+
+.dark-theme h1 {
+    color: #e0e0e0;
+}
+
+/* Sunset Orange Theme */
+.sunset-orange {
+    background-color: #fffaeb;
+    color: #130e01;
+}
+
+.sunset-orange button {
+    background-color: #ff8400;
+}
+
+.sunset-orange button:hover {
+    background-color: #cf4307;
+}
+
+.sunset-orange h1 {
+    color: #130e01;
+}
+
+/* Blueberry Yogurt Theme */
+.blueberry-yogurt {
+    background-color: #f6f7f9;
+    color: #0e1116;
+}
+
+.blueberry-yogurt button {
+    background-color: #c3acc8;
+}
+
+.blueberry-yogurt button:hover {
+    background-color: #b48ea9;
+}
+
+.blueberry-yogurt h1 {
+    color: #0e1116;
+}
+
+/* Theme Toggle Icon Positioning */
+.icon-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
     background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
 }
 
-footer p {
-    color: gray;
-    font-style: italic;
-    transition: color 0.3s;
-}
-
-footer p:hover {
-    color: #0077ff;
+.icon-toggle:hover {
+    background-color: #555;
 }

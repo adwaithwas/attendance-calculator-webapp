@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <title>Attendance Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <!-- top right dark mode toggle icon -->
-    <div class="icon-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
-        <span id="themeIcon">🌙</span>
-    </div>
+<body class="light-theme"> <!-- Default theme is light -->
 
     <h1>Attendance Calculator</h1>
-
     <label for="num">Enter Attended Classes (Numerator):</label><br>
-    <input type="number" id="num" min="0" placeholder="Attended classes"><br>
+    <input type="number" id="num" placeholder="Attended classes"><br>
 
     <label for="den">Enter Total Classes (Denominator):</label><br>
-    <input type="number" id="den" min="1" placeholder="Total classes"><br>
+    <input type="number" id="den" placeholder="Total classes"><br>
 
     <button onclick="getAttendance()">Calculate Attendance</button>
 
@@ -33,7 +27,9 @@
             click me maybe, or not. idc
         </p>
     </footer>
-    
+
+    <!-- Theme toggle icon in top-right corner -->
+    <div class="icon-toggle" id="themeToggle" title="Toggle Theme">🌙</div>
 
     <script src="script.js"></script>
 </body>

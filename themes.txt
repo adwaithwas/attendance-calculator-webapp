@@ -1,0 +1,23 @@
+Light Theme:
+    bg: #f4f4f4
+    fg: #333333
+    btn: #28a745
+    btn hover: #218838
+
+Dark Theme:
+    bg: #121212
+    fg: #e0e0e0
+    btn: #28a745
+    btn hover: #218838
+
+Sunset Orange:
+    bg: #fffaeb
+    fg: #130e01
+    btn: #ff8400
+    btn hover: #cf4307
+
+Blueberry Yogurt:
+    bg: #f6f7f9
+    fg: #0e1116
+    btn: #c3acc8
+    btn hover: #b48ea9
