@@ -110,6 +110,25 @@ button:hover {
     color: #0e1116;
 }
 
+/* Violet Dark Bubblegum Theme */
+.violet-dark-bubblegum {
+    background-color: #100113;
+    color: #f8d9fc;
+}
+
+.violet-dark-bubblegum button {
+    background-color: #ae10d5;
+}
+
+.violet-dark-bubblegum button:hover {
+    background-color: #0eb966;
+}
+
+.violet-dark-bubblegum h1 {
+    color: #f8d9fc;
+}
+
+/* Icon toggle button styles */
 .icon-toggle {
     position: fixed;
     bottom: 20px;
@@ -126,4 +145,13 @@ button:hover {
 
 .icon-toggle:hover {
     background-color: #555;
+}
+
+.violet-dark-bubblegum .icon-toggle {
+    background-color: #f8d9fc;
+    color: #100113;
+}
+
+.violet-dark-bubblegum .icon-toggle:hover {
+    background-color: #0eb966;
 }

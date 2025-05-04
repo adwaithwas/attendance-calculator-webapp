@@ -21,3 +21,9 @@ Blueberry Yogurt:
     fg: #0e1116
     btn: #c3acc8
     btn hover: #b48ea9
+
+Violet Dark Bubblegum:
+    bg: #100113
+    fg: #f8d9fc
+    btn: #ae10d5
+    btn hover: #0eb966
