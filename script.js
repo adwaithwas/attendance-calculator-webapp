@@ -47,7 +47,10 @@ function calculateAttendance(num, den) {
         message += `<br>You can afford to miss ${missableClasses - 1} more classes without dropping below 75%.`;
     } else {
         message = `Your current attendance is ${attendance.toFixed(2)}%.<br>You're below 75%.`;
-        message += `<br>You’ll need to attend ${(den - num) * 0.25} more classes to get to 75%.`;
+
+        // calculate required classes to go above 75%
+        let required = Math.ceil((0.75 * den - num) / (1 - 0.75));
+        message += `<br>You’ll need to attend ${required} more classes to reach above 75%.`;
     }
 
     return message;
